@@ -681,10 +681,10 @@ def _fix_file(filename: str, args: argparse.Namespace) -> int:
         ),
     )
     # contents_text = _fix_tokens(contents_text, min_version=args.min_version)
-    if args.min_version >= (3, 6):
-        contents_text = _fix_py36_plus(
-            contents_text, min_version=args.min_version,
-        )
+#     if args.min_version >= (3, 6):
+#         contents_text = _fix_py36_plus(
+#             contents_text, min_version=args.min_version,
+#         )
 
     if filename == '-':
         print(contents_text, end='')
